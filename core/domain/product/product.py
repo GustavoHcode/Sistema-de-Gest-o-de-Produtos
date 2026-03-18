@@ -1,8 +1,9 @@
 class Product:
-    def __init__(self, name: str, amount: int, price_sale: float , price_buy: float):
+    def __init__(self, id, name: str, amount: int, sale_price: float , buy_price: float):
+        self.id = id
         self.name = name 
-        self.price_sale = price_sale 
-        self.price_buy = price_buy
+        self.sale_price = sale_price 
+        self.buy_price = buy_price
         self.amount = amount
 
     def __str__(self):

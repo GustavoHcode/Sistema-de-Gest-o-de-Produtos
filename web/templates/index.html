@@ -3,25 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Meu Sistema{% endblock %}</title>
+    <title>{% block title %}GhTech | Gestão Inteligente{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="logo">Gestão GhTech</div>
-        <ul>
-            <li><a href="/">Início</a></li>
-            <li><a href="/produtos">Produtos</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="logo-dot"></span> Gestão GhTech
+            </div>
+           <ul>
+                <li><a href="/" class="{{ 'active' if request.path == '/' else '' }}">Início</a></li>
+                <li><a href="/produtos" class="{{ 'active' if request.path == '/produtos' else '' }}">Produtos</a></li>
+                <li><a href="/estoque" class="{{ 'active' if request.path == '/estoque' else '' }}">Estoque</a></li>
+                <li><a href="/vendas" class="{{ 'active' if request.path == '/vendas' else '' }}">Vendas</a></li>
+                <li><a href="/metricas" class="{{ 'active' if request.path == '/metricas' else '' }}">Métricas</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main class="container">
-        {% block content %}{% endblock %}
+        <div class="content-wrapper">
+            {% block content %}{% endblock %}
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 - Sistema de Gestão Profissional</p>
+        <p>&copy; 2026 • <strong>GhTech</strong> • Design Moderno para Gestão</p>
     </footer>
 </body>
 </html>

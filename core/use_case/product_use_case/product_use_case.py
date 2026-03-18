@@ -6,11 +6,11 @@ class CreateProduct:
         
     def execute(self, data):
         new_product = Product(
-
+            id=id,
             name=data['name'],
             amount=data['amount'],
-            price_sale=data['sale_price'],
-            price_buy=data['sale_buy'])
+            sale_price=data['sale_price'],
+            buy_price=data['sale_buy'])
         
         self.repository.save(new_product)
         return new_product

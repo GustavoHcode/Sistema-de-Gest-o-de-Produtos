@@ -11,7 +11,7 @@
             <input type="number" name="quantidade" placeholder="Quantidade" step="1" required>
             <input type="number" name="preco_compra" placeholder="Preço de compra" step="0.01" required>
             <input type="number" name="preco_venda" placeholder="Preço de venda" step="0.01" required>
-            <button type="submit" class="btn-save">Salvar Produto</button>
+            <button type="submit" class="btn-save">Cadastrar Produto</button>
         </form>
     </section>
 
@@ -38,6 +38,7 @@
                 <td>{{ p['amount'] }}</td>
                 <td>
                     <a href="/produtos/deletar/{{ p['id'] }}" class="btn-delete">Excluir</a>
+                    <a href="/produtos/editar/{{ p['id'] }}" class="btn-edit">Editar</a>
                 </td>
             </tr>
             {% else %}
