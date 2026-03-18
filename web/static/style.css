@@ -1,0 +1,142 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE */
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f6f8fb;
+    color: #1f2937;
+}
+
+/* NAVBAR */
+nav {
+    background: #ffffffcc;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #e5e7eb;
+    padding: 14px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+nav .logo {
+    font-weight: 600;
+    font-size: 18px;
+    color: #111827;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4b5563;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #111827;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    min-height: 75vh;
+}
+
+/* TÍTULOS */
+h1, h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* TABELA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+th {
+    background: #f9fafb;
+    color: #6b7280;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+th, td {
+    padding: 14px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+tr:hover {
+    background: #f9fafb;
+}
+
+/* BOTÕES */
+.btn-save {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: 500;
+}
+
+.btn-save:hover {
+    background: #1d4ed8;
+}
+
+.btn-delete {
+    color: #ef4444;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.btn-delete:hover {
+    opacity: 0.7;
+}
+
+/* INPUTS */
+input, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #9ca3af;
+    font-size: 14px;
+}
