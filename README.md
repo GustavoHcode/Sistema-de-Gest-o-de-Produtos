@@ -1,55 +1,33 @@
-📦 Sistema de Gestão de Produtos
 
-A ideia principal é praticar Python, Flask, conceitos básicos de SQL e os princípios de Arquitetura Limpa, por 
-meio do desenvolvimento de um sistema de gestão de produtos. O projeto busca consolidar conhecimentos 
-fundamentais de backend, como organização de código, separação de responsabilidades, criação de APIs 
-REST e manipulação de banco de dados.
+# Sistema de Gestão de Produtos
 
-🚀 Visão Geral
+## Descrição
 
-A longo prazo, a proposta é evoluir o sistema para atender distribuidoras, incorporando funcionalidades 
-mais robustas, como controle avançado de estoque, gestão de fornecedores, acompanhamento de pedidos 
-e relatórios estratégicos.
+Esse sistema está sendo construído com a intenção de ajudar pequenas distribuidoras a gerenciar seus produtos.
 
-✨ Features
-✅ MVP (já implementado)
+Está sendo desenvolvido com Python e Flask, utilizando SQLite como banco de dados apenas para testes. O front-end foi criado com o auxílio de inteligência artificial.
 
- Cadastro de produtos
+O sistema é responsável pelo gerenciamento de produtos de distribuidoras, contemplando o cadastro de produtos e o registro de vendas diárias. Além disso, oferece um painel visual com estatísticas de vendas, permitindo identificar, por exemplo, os produtos mais e menos vendidos no mês.
 
- Edição de produtos
+## ✨ Features ✅ MVP (já implementado)
 
- Exclusão de produtos
+- Cadastro de Produtos
+- Edição de Produtos
+- Cadastro de Vendas
+- Lucro Mensal
 
-🔜 Próximas Features
+## ✨ Próximas Features
 
- Listagem com busca/filtro
+- Listagem com busca/filtro
+- Controle básico de estoque
 
- Controle básico de estoque
-
- Autenticação de usuários
-
- Controle de permissões (admin/user)
-
- Dashboard com métricas
-
- Integração com API externa
-
- Exportação de relatórios
- 
- 🛠️ Tecnologias Utilizadas
-
-Frontend: HTML / CSS
-
-Backend: Python / Flask 
-
-Banco de Dados: SQlite - Fácil de Trocar
-
-📊 Status do Projeto
+## 📊 Status do Projeto
 
 🚧 Em desenvolvimento (MVP finalizado)
 
-👨‍💻 Autor
 
-LinkedIn: www.linkedin.com/in/gustavo-henrique-lacerda-ramos-5b996224b
 
-GitHub: https://github.com/GustavoHcode
+## Authors
+
+- [@GustavoHcode](https://github.com/GustavoHcode)
+
