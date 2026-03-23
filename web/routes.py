@@ -57,6 +57,15 @@ def create_product_blueprint(uc_create, uc_list, uc_delete_produto, uc_edit_prod
             return "Produto não encontrado", 404
 
         return render_template('edit-produto.html', produto=produto)
+    
+    @bp.route('/estoque')
+
+    def page_estoque():
+
+        produtos = uc_list.execute()
+        return render_template('estoque.html', produtos = produtos)
+    
+
     @bp.route('/metricas')
     def page_metricas():
         monthly_profits = uc_list_metricas.execute()

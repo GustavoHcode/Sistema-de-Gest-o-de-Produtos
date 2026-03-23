@@ -1,0 +1,41 @@
+{% extends 'index.html'%}
+
+
+{% block content %}
+
+<table class="product-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Preço de Compra</th>
+                <th>Preço de Venda</th>
+                <th>Quantidade</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for p in produtos %}
+            <tr>
+                <td>{{ p['id'] }}</td>
+                <td>{{ p['name'] }}</td>
+                <td>R$ {{ p['buy_price'] }}</td>
+                <td>R$ {{ p['sale_price'] }}</td>
+                <td>{{ p['amount'] }}</td>
+                <td>
+                    
+                    <a href="/produtos/editar/{{ p['id'] }}" class="btn-edit">Editar</a>
+                </td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="6">Nenhum produto encontrado no banco de dados.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+
+
+{% endblock %}
